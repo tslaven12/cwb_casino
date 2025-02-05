@@ -1,0 +1,270 @@
+[gd_scene load_steps=4 format=3 uid="uid://dexr7gdvwnvg0"]
+
+[ext_resource type="Script" path="res://world.gd" id="1_mkowl"]
+[ext_resource type="Texture2D" uid="uid://blikwludqpxmq" path="res://dice-roll-pixel-art-set-playing-cube-sides-collection-8-bit-sprite_418367-352.jpg" id="2_3y012"]
+
+[sub_resource type="Theme" id="Theme_ib6yq"]
+default_font_size = 0
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_mkowl")
+
+[node name="RollButton" type="Button" parent="."]
+offset_left = 494.0
+offset_top = 240.0
+offset_right = 598.0
+offset_bottom = 302.0
+text = "Throw Dice"
+
+[node name="TextLabels" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = SubResource("Theme_ib6yq")
+
+[node name="BankrollText" type="RichTextLabel" parent="TextLabels"]
+layout_mode = 0
+offset_left = 486.0
+offset_top = 79.0
+offset_right = 621.0
+offset_bottom = 116.0
+bbcode_enabled = true
+text = "[center]Bankroll: $ [/center]
+"
+
+[node name="ResultText" type="RichTextLabel" parent="TextLabels"]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 162.0
+offset_right = 242.0
+offset_bottom = 198.0
+bbcode_enabled = true
+text = "[center]Result: 1[/center]"
+
+[node name="BetOneText" type="RichTextLabel" parent="TextLabels"]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 357.0
+offset_right = 155.0
+offset_bottom = 403.0
+text = "Bet: 1"
+autowrap_mode = 0
+
+[node name="BetOneText2" type="RichTextLabel" parent="TextLabels"]
+layout_mode = 0
+offset_left = 257.0
+offset_top = 359.0
+offset_right = 334.0
+offset_bottom = 405.0
+text = "Bet: 1"
+autowrap_mode = 0
+
+[node name="BetOneText3" type="RichTextLabel" parent="TextLabels"]
+layout_mode = 0
+offset_left = 438.0
+offset_top = 360.0
+offset_right = 503.0
+offset_bottom = 406.0
+text = "Bet: 1"
+autowrap_mode = 0
+
+[node name="BetOneText4" type="RichTextLabel" parent="TextLabels"]
+layout_mode = 0
+offset_left = 617.0
+offset_top = 362.0
+offset_right = 682.0
+offset_bottom = 408.0
+text = "Bet: 1"
+autowrap_mode = 0
+
+[node name="BetOneText5" type="RichTextLabel" parent="TextLabels"]
+layout_mode = 0
+offset_left = 792.0
+offset_top = 361.0
+offset_right = 882.0
+offset_bottom = 407.0
+text = "Bet: 1"
+autowrap_mode = 0
+
+[node name="BetOneText6" type="RichTextLabel" parent="TextLabels"]
+layout_mode = 0
+offset_left = 976.0
+offset_top = 364.0
+offset_right = 1070.0
+offset_bottom = 410.0
+text = "Bet: 1"
+autowrap_mode = 0
+
+[node name="Winner" type="RichTextLabel" parent="TextLabels"]
+clip_contents = false
+layout_mode = 0
+offset_left = 420.0
+offset_top = 124.0
+offset_right = 644.0
+offset_bottom = 218.0
+theme_override_font_sizes/normal_font_size = 45
+text = "Winner!!"
+autowrap_mode = 0
+
+[node name="BetOne" type="Button" parent="."]
+offset_left = 61.0
+offset_top = 486.0
+offset_right = 168.0
+offset_bottom = 533.0
+text = "Increase Bet"
+
+[node name="BetTwo" type="Button" parent="."]
+offset_left = 235.0
+offset_top = 487.0
+offset_right = 344.0
+offset_bottom = 535.0
+text = "Increase Bet"
+
+[node name="BetThree" type="Button" parent="."]
+offset_left = 419.0
+offset_top = 491.0
+offset_right = 527.0
+offset_bottom = 540.0
+text = "Increase Bet"
+
+[node name="BetFour" type="Button" parent="."]
+offset_left = 595.0
+offset_top = 493.0
+offset_right = 707.0
+offset_bottom = 543.0
+text = "Increase Bet"
+
+[node name="BetFive" type="Button" parent="."]
+offset_left = 771.0
+offset_top = 495.0
+offset_right = 881.0
+offset_bottom = 546.0
+text = "Increase Bet"
+
+[node name="BetSix" type="Button" parent="."]
+offset_left = 955.0
+offset_top = 494.0
+offset_right = 1068.0
+offset_bottom = 542.0
+text = "Increase Bet"
+
+[node name="SideOne" type="Sprite2D" parent="."]
+position = Vector2(114, 435)
+scale = Vector2(0.171875, 0.176136)
+texture = ExtResource("2_3y012")
+region_enabled = true
+region_rect = Rect2(648, 200, 384, 352)
+
+[node name="SideTwo" type="Sprite2D" parent="."]
+position = Vector2(288, 434)
+scale = Vector2(0.171875, 0.176136)
+texture = ExtResource("2_3y012")
+region_enabled = true
+region_rect = Rect2(1056, 200, 360, 352)
+
+[node name="SideThree" type="Sprite2D" parent="."]
+position = Vector2(470, 433)
+scale = Vector2(0.171875, 0.176136)
+texture = ExtResource("2_3y012")
+region_enabled = true
+region_rect = Rect2(1448, 200, 368, 360)
+
+[node name="SideFour" type="Sprite2D" parent="."]
+position = Vector2(648, 435)
+scale = Vector2(0.171875, 0.176136)
+texture = ExtResource("2_3y012")
+region_enabled = true
+region_rect = Rect2(648, 592, 384, 368)
+
+[node name="SideFive" type="Sprite2D" parent="."]
+position = Vector2(820, 433)
+scale = Vector2(0.171875, 0.176136)
+texture = ExtResource("2_3y012")
+region_enabled = true
+region_rect = Rect2(1056, 600, 352, 344)
+
+[node name="SideSix" type="Sprite2D" parent="."]
+position = Vector2(1005, 433)
+scale = Vector2(0.171875, 0.176136)
+texture = ExtResource("2_3y012")
+region_enabled = true
+region_rect = Rect2(1448, 592, 352, 352)
+
+[node name="QuitButton" type="Button" parent="."]
+offset_left = 1017.0
+offset_top = 14.0
+offset_right = 1138.0
+offset_bottom = 71.0
+text = "Quit"
+
+[node name="DecreaseBet" type="Button" parent="."]
+offset_left = 61.0
+offset_top = 546.0
+offset_right = 171.0
+offset_bottom = 593.0
+text = "Decrease Bet
+"
+
+[node name="DecreaseBet2" type="Button" parent="."]
+offset_left = 235.0
+offset_top = 547.0
+offset_right = 345.0
+offset_bottom = 594.0
+text = "Decrease Bet
+"
+
+[node name="DecreaseBet3" type="Button" parent="."]
+offset_left = 417.0
+offset_top = 553.0
+offset_right = 527.0
+offset_bottom = 600.0
+text = "Decrease Bet
+"
+
+[node name="DecreaseBet4" type="Button" parent="."]
+offset_left = 595.0
+offset_top = 558.0
+offset_right = 705.0
+offset_bottom = 605.0
+text = "Decrease Bet
+"
+
+[node name="DecreaseBet5" type="Button" parent="."]
+offset_left = 774.0
+offset_top = 556.0
+offset_right = 884.0
+offset_bottom = 603.0
+text = "Decrease Bet
+"
+
+[node name="DecreaseBet6" type="Button" parent="."]
+offset_left = 955.0
+offset_top = 555.0
+offset_right = 1065.0
+offset_bottom = 602.0
+text = "Decrease Bet
+"
+
+[node name="ResetButton" type="Button" parent="."]
+offset_left = 133.0
+offset_top = 257.0
+offset_right = 234.0
+offset_bottom = 317.0
+text = "Reset Bets"
+
+[connection signal="pressed" from="RollButton" to="." method="_on_roll_button_pressed"]
+[connection signal="pressed" from="BetOne" to="." method="_on_bet_one_pressed"]
+[connection signal="pressed" from="BetTwo" to="." method="_on_bet_two_pressed"]
+[connection signal="pressed" from="BetThree" to="." method="_on_bet_three_pressed"]
+[connection signal="pressed" from="BetFour" to="." method="_on_bet_four_pressed"]
+[connection signal="pressed" from="BetFive" to="." method="_on_bet_five_pressed"]
+[connection signal="pressed" from="BetSix" to="." method="_on_bet_six_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="DecreaseBet" to="." method="_on_decrease_bet_pressed"]
+[connection signal="pressed" from="DecreaseBet2" to="." method="_on_decrease_bet_2_pressed"]
+[connection signal="pressed" from="DecreaseBet3" to="." method="_on_decrease_bet_3_pressed"]
+[connection signal="pressed" from="DecreaseBet4" to="." method="_on_decrease_bet_4_pressed"]
+[connection signal="pressed" from="DecreaseBet5" to="." method="_on_decrease_bet_5_pressed"]
+[connection signal="pressed" from="DecreaseBet6" to="." method="_on_decrease_bet_6_pressed"]
+[connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
